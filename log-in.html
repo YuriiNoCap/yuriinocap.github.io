@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ music</title>
+    <link rel="stylesheet" href="style-box.css" />
+    <link rel="stylesheet" href="log-in-style.css" />
+    <script
+      src="https://kit.fontawesome.com/4cd3d6f3ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header class="background">
+      <div class="header-container">
+        <a href="index.html" class="huvudsidans_länk">
+          <img class="logo" src="images\pngegg.png" alt="DJ kontroller" />
+        </a>
+        <div id="header-buttons">
+          <a href="index.html">Home page</a>
+          <a href="#">Button 2</a>
+          <a href="log-in.html">Log in</a>
+        </div>
+        <button id="dark-light-mode">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+              <li><a class="iii" href="index.html">Home page</a></li>
+              <li><a class="iii" href="#">Button 2</a></li>
+              <li><a class="iii" href="log-in.html">Log in</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="log-in-main">
+      <div class="log-in-box">
+        <h1 class="text">Log in</h1>
+        <form>
+          <h2 class="text log-in-box-titles">First name</h2>
+          <input
+            class="log-in-box-items text-input"
+            type="text"
+            placeholder="Your first name"
+            required="required"
+          />
+          <h2 class="text log-in-box-titles">Last name</h2>
+          <input
+            class="log-in-box-items text-input"
+            type="text"
+            placeholder="Your last name"
+            required="required"
+          />
+          <h2 class="text log-in-box-titles">E-post</h2>
+          <input
+            class="log-in-box-items text-input"
+            type="email"
+            placeholder="name@mail.com"
+            required="required"
+          />
+          <h2 class="text log-in-box-titles">Password</h2>
+          <input
+            class="log-in-box-items text-input"
+            type="password"
+            placeholder="password123"
+            required="required"
+          />
+          <input
+            class="log-in-box-items"
+            id="log-in-button"
+            type="submit"
+            value="Log in"
+          />
+        </form>
+      </div>
+    </main>
+    <footer class="background">
+      <div class="footer-container">
+        <div class="row">
+          <div class="space-between text-center">
+            <h3>Address</h3>
+            <p>Nordic Emusic Ab</p>
+            <p>Mallslingan 3</p>
+            <p>187 66 Täby</p>
+          </div>
+          <div class="space-between text-center">
+            <h3>Contact</h3>
+            <p>E-post:</p>
+            <p>@djmusic.se</p>
+            <p>Telefon: 08-400 236 00</p>
+          </div>
+          <div class="space-between text-center">
+            <h3>Regulations</h3>
+            <p>Payment</p>
+            <p>Delivery</p>
+            <p>Return</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center">
+            <i class="fa fa-home"></i>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-phone"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
