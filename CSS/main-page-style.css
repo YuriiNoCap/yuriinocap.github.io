@@ -8,7 +8,7 @@
 
 .main-text {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 140px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -22,6 +22,7 @@ span {
   padding: 1vh;
   margin: 18vw;
   border-radius: 3px;
+  font-family: "Roboto Mono";
 }
 
 .text-first-span {
@@ -120,12 +121,22 @@ span {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   span {
     margin: 12vw;
   }
 
   .main-text {
-    padding-top: 130px;
+    padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  span {
+    margin: 2vw;
+  }
+
+  .main-text {
+    padding-top: 180px;
   }
 }
