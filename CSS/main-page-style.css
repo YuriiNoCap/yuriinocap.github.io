@@ -1,0 +1,131 @@
+#main-image {
+  height: 100vh;
+  background-image: url("../images/Background/3706657.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-text {
+  width: 100%;
+  padding-top: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text-large {
+  font-size: 50px;
+}
+
+span {
+  padding: 1vh;
+  margin: 18vw;
+  border-radius: 3px;
+}
+
+.text-first-span {
+  padding: 8px 40px;
+}
+
+#main-image p {
+  animation: slide-in-left 1s ease-out;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.main-title {
+  font-size: 70px;
+  text-align: center;
+  padding: 15px 0;
+  padding-top: 55px;
+}
+
+.containers-title {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#container-goods {
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.inte-flex {
+  display: block;
+  width: 100vw;
+}
+
+.grid-item {
+  width: 310px;
+  height: 360px;
+  background-color: white;
+  border: 5px solid black;
+  margin: 25px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: scale(1.1);
+}
+
+.grid-image {
+  width: 280px;
+  height: 220px;
+  margin: 15px;
+}
+
+.product-name {
+  margin: 5px 15px;
+}
+
+.text {
+  color: black;
+}
+
+.product-type {
+  font-size: 22px;
+  margin: 5px 15px;
+}
+
+.product-price {
+  margin-left: 230px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1120px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  span {
+    margin: 12vw;
+  }
+
+  .main-text {
+    padding-top: 130px;
+  }
+}

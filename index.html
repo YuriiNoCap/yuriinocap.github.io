@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DJ music</title>
-    <link rel="stylesheet" href="style-box.css" />
-    <link rel="stylesheet" href="main-page-style.css" />
+    <link rel="stylesheet" href="CSS/style-box.css" />
+    <link rel="stylesheet" href="CSS/main-page-style.css" />
     <script
       src="https://kit.fontawesome.com/4cd3d6f3ce.js"
       crossorigin="anonymous"
@@ -32,27 +32,37 @@
   </head>
   <body>
     <header class="background">
-      <div class="header-container">
-        <a href="index.html" class="huvudsidans_länk">
-          <img class="logo" src="images\pngegg.png" alt="DJ kontroller" />
+      <div id="header-container">
+        <a id="headers-icon">
+          <img
+            class="logo"
+            src="images/icons/231541-removebg-preview.png"
+            alt="DJ kontroller"
+          />
         </a>
-        <div id="header-buttons">
+        <nav id="fixed-buttons">
           <a href="index.html">Home page</a>
-          <a href="#">Button 2</a>
+          <a href="about-us.html">About us</a>
+          <a href="#container-goods">Products</a>
           <a href="log-in.html">Log in</a>
-        </div>
+        </nav>
         <button id="dark-light-mode">
           <i class="fas fa-sun"></i>
         </button>
       </div>
-      <nav>
+      <nav id="bars-menu">
         <ul>
           <li>
             <i class="fa-solid fa-bars"></i>
             <ul>
-              <li><a class="iii" href="index.html">Home page</a></li>
-              <li><a class="iii" href="#">Button 2</a></li>
-              <li><a class="iii" href="log-in.html">Log in</a></li>
+              <li><a class="bars-menu-text" href="index.html">Home page</a></li>
+              <li>
+                <a class="bars-menu-text" href="about-us.html">About us</a>
+              </li>
+              <li>
+                <a class="bars-menu-text" href="#container-goods">Products</a>
+              </li>
+              <li><a class="bars-menu-text" href="log-in.html">Log in</a></li>
             </ul>
           </li>
         </ul>
@@ -60,343 +70,360 @@
     </header>
 
     <main>
-      <!-- <div class="main_window"> -->
-      <div class="main_image"></div>
-      <!-- </div> -->
-      <h1 class="main-title">Our goods</h1>
-      <h1 class="containers-title">DJ controls</h1>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_emusic TRAKTOR_KONTROL_S2_MK3_01.jpg"
-            alt="Native Instruments Traktor Kontrol S2 MK3"
-          />
-          <div class="product-name">
-            <h2 class="text">Traktor Kontrol S2 MK3</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">2-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">3459 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_Pioneer_DDJ-FLX4_1.jpg"
-            alt="Pioneer DDJ-FLX4"
-          />
-          <div class="product-name">
-            <h2 class="text">Pioneer DDJ-FLX4</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">2-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">3499 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_ni-s3_1.jpg"
-            alt="Native Instruments Traktor Kontrol S3"
-          />
-          <div class="product-name">
-            <h2 class="text">Traktor Kontrol S3</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">4-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">4999 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_Mixstream_Angle-Left_High-Res.jpg"
-            alt="Numark Mixstream Pro"
-          />
-          <div class="product-name">
-            <h2 class="text">Numark Mixstream Pro</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">2-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">7999 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_DJ-707_emusic_1.jpg"
-            alt="Roland DJ-707M"
-          />
-          <div class="product-name">
-            <h2 class="text">Roland DJ-707M</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">2-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">11999 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_DDJ-FLX10_emusic1.jpg"
-            alt="Pioneer DDJ-FLX10"
-          />
-          <div class="product-name">
-            <h2 class="text">Pioneer DDJ-FLX10</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">4-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">18999 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_denondj-prime4_1.jpg"
-            alt="Denon DJ Prime 4
+      <section id="main-image">
+        <p class="main-text text-large">
+          <span class="background text-first-span">DJ STORE</span>
+        </p>
+        <p class="main-text">
+          <span class="background">Sound in details</span>
+        </p>
+        <p class="main-text">
+          <span class="background">disco</span>
+          <span class="background">rave</span>
+        </p>
+      </section>
+      <section id="container-goods">
+        <h1 class="main-title">Our goods</h1>
+        <h1 class="containers-title">DJ controls</h1>
+        <div class="grid-container">
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\223838.png"
+              alt="Native Instruments Traktor Kontrol S2 MK3"
+            />
+            <div class="product-name">
+              <h2 class="text">Traktor Kontrol S2 MK3</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">2-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">3459 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\225019.png"
+              alt="Pioneer DDJ-FLX4"
+            />
+            <div class="product-name">
+              <h2 class="text">Pioneer DDJ-FLX4</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">2-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">3499 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\224354.png"
+              alt="Native Instruments Traktor Kontrol S3"
+            />
+            <div class="product-name">
+              <h2 class="text">Traktor Kontrol S3</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">4-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">4999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\224013.png"
+              alt="Numark Mixstream Pro"
+            />
+            <div class="product-name">
+              <h2 class="text">Numark Mixstream Pro</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">2-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">7999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\223701.png"
+              alt="Roland DJ-707M"
+            />
+            <div class="product-name">
+              <h2 class="text">Roland DJ-707M</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">2-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">11999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\222613.png"
+              alt="Pioneer DDJ-FLX10"
+            />
+            <div class="product-name">
+              <h2 class="text">Pioneer DDJ-FLX10</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">4-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">18999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\223010.png"
+              alt="Denon DJ Prime 4
           "
-          />
-          <div class="product-name">
-            <h2 class="text">Denon DJ Prime 4</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">4-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">27949 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\highres_OPUS-QUAD_emusic1.jpg"
-            alt="Pioneer OPUS-QUAD
+            />
+            <div class="product-name">
+              <h2 class="text">Denon DJ Prime 4</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">4-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">27949 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\224658.png"
+              alt="Pioneer OPUS-QUAD
           "
-          />
-          <div class="product-name">
-            <h2 class="text">Pioneer OPUS-QUAD</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">4-channel DJ controller</p>
-          </div>
-          <div class="product-price">
-            <p class="text">37999 kr</p>
-          </div>
+            />
+            <div class="product-name">
+              <h2 class="text">Pioneer OPUS-QUAD</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">4-channel DJ controller</p>
+            </div>
+            <div class="product-price">
+              <p class="text">37999 kr</p>
+            </div>
+          </article>
         </div>
-      </div>
-      <h1 class="containers-title">DJ decks</h1>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview (1).jpg"
-            alt="Numark PT01"
-          />
-          <div class="product-name">
-            <h2 class="text">Numark PT01</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Turntable</p>
-          </div>
-          <div class="product-price">
-            <p class="text">1999 kr</p>
-          </div>
+        <h1 class="containers-title">DJ decks</h1>
+        <div class="grid-container">
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\225233.png"
+              alt="Numark PT01"
+            />
+            <div class="product-name">
+              <h2 class="text">Numark PT01</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Turntable</p>
+            </div>
+            <div class="product-price">
+              <p class="text">1999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\225906.png"
+              alt="Gemini TT-4000"
+            />
+            <div class="product-name">
+              <h2 class="text">Gemini TT-4000</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Turntable</p>
+            </div>
+            <div class="product-price">
+              <p class="text">3499 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\225522.png"
+              alt="Pioneer PLX-500"
+            />
+            <div class="product-name">
+              <h2 class="text">Pioneer PLX-500</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Turntable</p>
+            </div>
+            <div class="product-price">
+              <p class="text">4999 kr</p>
+            </div>
+          </article>
         </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview.jpg"
-            alt="Gemini TT-4000"
-          />
-          <div class="product-name">
-            <h2 class="text">Gemini TT-4000</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Turntable</p>
-          </div>
-          <div class="product-price">
-            <p class="text">3499 kr</p>
-          </div>
+        <h1 class="containers-title">DJ mixers</h1>
+        <div class="grid-container">
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\230022.png"
+              alt="SubZero "
+            />
+            <div class="product-name">
+              <h2 class="text">SubZero</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">4-channel DJ mixer</p>
+            </div>
+            <div class="product-price">
+              <p class="text">3999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\230229.png"
+              alt="Gemini CDM-4000BT"
+            />
+            <div class="product-name">
+              <h2 class="text">Gemini CDM-4000BT</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">2-channel DJ mixer</p>
+            </div>
+            <div class="product-price">
+              <p class="text">4499 kr</p>
+            </div>
+          </article>
         </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview (2).jpg"
-            alt="Pioneer PLX-500"
-          />
-          <div class="product-name">
-            <h2 class="text">Pioneer PLX-500</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Turntable</p>
-          </div>
-          <div class="product-price">
-            <p class="text">4999 kr</p>
-          </div>
+        <h1 class="containers-title">DJ headphone</h1>
+        <div class="grid-container">
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\230740.png"
+              alt="Audio Technica ATH-M40x"
+            />
+            <div class="product-name">
+              <h2 class="text">Audio Technica ATH-M40x</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Monitoring Headphones</p>
+            </div>
+            <div class="product-price">
+              <p class="text">1499 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\230651.png"
+              alt="Sennheiser HD 25"
+            />
+            <div class="product-name">
+              <h2 class="text">Sennheiser HD 25</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Headphones</p>
+            </div>
+            <div class="product-price">
+              <p class="text">1499 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\230343.png"
+              alt="Pioneer DJ HDJ-X5BT"
+            />
+            <div class="product-name">
+              <h2 class="text">Pioneer DJ HDJ-X5BT</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Headphones</p>
+            </div>
+            <div class="product-price">
+              <p class="text">1999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\230506.png"
+              alt="Mackie MC-350"
+            />
+            <div class="product-name">
+              <h2 class="text">Mackie MC-350</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Monitoring Headphones</p>
+            </div>
+            <div class="product-price">
+              <p class="text">2999 kr</p>
+            </div>
+          </article>
+          <article class="grid-item">
+            <img
+              class="grid-image"
+              src="images\products\230555.png"
+              alt="V-Moda Crossfade 3"
+            />
+            <div class="product-name">
+              <h2 class="text">V-Moda Crossfade 3</h2>
+            </div>
+            <div class="product-type">
+              <p class="text">Monitoring Headphones</p>
+            </div>
+            <div class="product-price">
+              <p class="text">3499 kr</p>
+            </div>
+          </article>
         </div>
-      </div>
-      <h1 class="containers-title">DJ mixers</h1>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview (3).jpg"
-            alt="SubZero "
-          />
-          <div class="product-name">
-            <h2 class="text">SubZero</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">4-channel DJ mixer</p>
-          </div>
-          <div class="product-price">
-            <p class="text">3999 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview (4).jpg"
-            alt="Gemini CDM-4000BT"
-          />
-          <div class="product-name">
-            <h2 class="text">Gemini CDM-4000BT</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">2-channel DJ mixer</p>
-          </div>
-          <div class="product-price">
-            <p class="text">4499 kr</p>
-          </div>
-        </div>
-      </div>
-      <h1 class="containers-title">DJ headphone</h1>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview_1.jpg"
-            alt="Audio Technica ATH-M40x"
-          />
-          <div class="product-name">
-            <h2 class="text">Audio Technica ATH-M40x</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Monitoring Headphones</p>
-          </div>
-          <div class="product-price">
-            <p class="text">1499 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview_1 (1).jpg"
-            alt="Sennheiser HD 25"
-          />
-          <div class="product-name">
-            <h2 class="text">Sennheiser HD 25</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Headphones</p>
-          </div>
-          <div class="product-price">
-            <p class="text">1499 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview (5).jpg"
-            alt="Pioneer DJ HDJ-X5BT"
-          />
-          <div class="product-name">
-            <h2 class="text">Pioneer DJ HDJ-X5BT</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Headphones</p>
-          </div>
-          <div class="product-price">
-            <p class="text">1999 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview (6).jpg"
-            alt="Mackie MC-350"
-          />
-          <div class="product-name">
-            <h2 class="text">Mackie MC-350</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Monitoring Headphones</p>
-          </div>
-          <div class="product-price">
-            <p class="text">2999 kr</p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img
-            class="grid-image"
-            src="images\products\preview (7).jpg"
-            alt="V-Moda Crossfade 3"
-          />
-          <div class="product-name">
-            <h2 class="text">V-Moda Crossfade 3</h2>
-          </div>
-          <div class="product-type">
-            <p class="text">Monitoring Headphones</p>
-          </div>
-          <div class="product-price">
-            <p class="text">3499 kr</p>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="background">
-      <div class="footer-container">
-        <div class="row">
-          <div class="space-between text-center">
+      <div id="footer-container">
+        <div class="row-footer-container">
+          <div class="space-between centralisering">
             <h3>Address</h3>
-            <p>Nordic Emusic Ab</p>
-            <p>Mallslingan 3</p>
-            <p>187 66 Täby</p>
+            <address>
+              <p>Nordic Emusic Ab</p>
+              <p>Mallslingan 3</p>
+              <p>187 66 Täby</p>
+            </address>
           </div>
-          <div class="space-between text-center">
+          <div class="space-between centralisering">
             <h3>Contact</h3>
-            <p>E-post:</p>
-            <p>@djmusic.se</p>
-            <p>Telefon: 08-400 236 00</p>
+            <div class="contact-info">
+              <p>E-post:</p>
+              <p>@djmusic.se</p>
+              <p>Telefon: 08-400 236 00</p>
+            </div>
           </div>
-          <div class="space-between text-center">
+          <div class="space-between centralisering">
             <h3>Regulations</h3>
-            <p>Payment</p>
-            <p>Delivery</p>
-            <p>Return</p>
+            <div class="regulations-info">
+              <p>Payment</p>
+              <p>Delivery</p>
+              <p>Return</p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="text-center">
+        <div class="row-footer-container">
+          <div class="centralisering">
             <i class="fa fa-home"></i>
           </div>
-          <div class="text-center">
+          <div class="centralisering">
             <i class="fa fa-envelope"></i>
           </div>
-          <div class="text-center">
+          <div class="centralisering">
             <i class="fa fa-phone"></i>
           </div>
         </div>
